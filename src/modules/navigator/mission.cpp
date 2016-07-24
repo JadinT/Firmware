@@ -389,7 +389,7 @@ Mission::set_mission_items()
 		/* no mission available or mission finished, switch to loiter */
 		if (_mission_type != MISSION_TYPE_NONE) {
 			/* https://en.wikipedia.org/wiki/Loiter_(aeronautics) */
-			mavlink_log_critical(_navigator->get_mavlink_log_pub(), "mission finished, loitering");
+			mavlink_log_critical(_navigator->get_mavlink_log_pub(), "mission finished");
 			user_feedback_done = true;
 
 			/* use last setpoint for loiter */
